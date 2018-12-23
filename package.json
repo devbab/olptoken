@@ -1,0 +1,31 @@
+{
+    "name": "olptoken",
+    "version": "1.0.3",
+    "description": "OLP token",
+    "main": "olptoken.js",
+    "browser": "dist/olptoken/min.js",
+    "unpkg": "dist/olptoken.min.js",
+    "files": [
+        "index.js",
+        "dist/olptoken.min.js"
+    ],
+    "scripts": {
+        "test": "node test/test.js",
+        "browser": "uglifyjs dist/crypto-js.min.js dist/hmac-sha256.min.js  dist/oauth-1.0a.js dist/main.js  -o dist/olptoken.min.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/devbab/olptoken.git"
+    },
+    "keywords": [
+        "HERE-API",
+        "HERE Maps",
+        "OLP",
+        "Oauth"
+    ],
+    "author": "Devbab",
+    "license": "ISC",
+    "dependencies": {
+        "superagent": "^4.0.0"
+    }
+}
